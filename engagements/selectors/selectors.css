@@ -1,0 +1,27 @@
+p {
+    color:blue
+}
+
+h1 {
+    color:red
+}
+
+main p {
+    color:maroon
+}
+
+#manititle {
+    color:darkmagenta
+}
+
+orange {
+    color:orange
+}
+
+.purple {
+    color:purple
+}
+.bigger {
+    font-size: 15pt;
+    font-weight: bold;
+}
