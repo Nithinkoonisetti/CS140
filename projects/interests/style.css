@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    color: red;
+    background-color: black;
+}
+
+header {
+    background-color: #222222;
+    color: red;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav a {
+    color: rgb(0, 4, 255);
+}
+
+main {
+    background-color: #111111;
+}
+
+#important {
+    color: red;
+}
+
+.info {
+    color: #848383;
+}
+
+span {
+    color: red;
+}
+
+h2 {
+    color: red;
+}
+
+footer {
+    background-color: #212121;
+}
