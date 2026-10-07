@@ -1,0 +1,45 @@
+body {
+    background-color: #dce6f2;
+    background-image: url("bluebg.jpg");
+    background-repeat: repeat;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #0f0f0f;
+}
+
+header {
+    background: #222222 url("redFlowerSmall.png") no-repeat right top;
+    background-size: contain;
+    color: rgb(246, 242, 242);
+}
+nav {
+    background-color: #222222;
+}
+
+nav a {
+    color: rgb(244, 238, 238);
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    background-color: white;
+}
+
+img {
+    width: 400px;
+}
+
+ul {
+    list-style-image: url("dot.png");
+}
+
+h2 {
+    color: #c00000;
+}
+
+footer {
+    background-color: #0d0d0d;
+    color: white;
+}
