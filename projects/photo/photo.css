@@ -1,4 +1,4 @@
-```css
+
 body {
     font-family: Arial, sans-serif;
     color: black;
@@ -42,15 +42,12 @@ p {
     font-size: 16px;
 }
 
-```css
 img {
     width: 350px;
     height: 200px;
     object-fit: cover;
     margin: 10px;
 }
-```
-
 
 ul {
     list-style-image: url("dot.png");
