@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: lightgray;
+    color: black;
+    margin: 2%;
+}
+
+header {
+    background-color: lightblue;
+    padding: 1em;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 2%;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: green;
+}
+
+
+.block {
+    outline: 2px solid red;
+}
+
+strong, a, span {
+    outline: 2px solid blue;
+}
+
+figure {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+figcaption {
+    color: green;
+}
+
+
+.box {
+    background-color: lightyellow;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 25px;
+
+    border-bottom: 3px solid black;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+    width: 60%;
+}
+
+footer {
+    background-color: lightblue;
+    padding: 1em;
+}
