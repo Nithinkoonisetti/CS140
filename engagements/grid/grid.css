@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.column {
+    background-color: lightblue;
+    padding: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.my-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.my-grid p {
+    background-color: lightgray;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px gray;
+}
