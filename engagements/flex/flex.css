@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: 2px solid #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: block;
+    padding: 5px 10px; 
+    background-color: rgb(85, 146, 176);
+   color: white;
+   /*border-bottom: this solid whitr;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row wrap; /* flex flow row wrap */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.column {
+    background-color: lightblue;
+    padding: 20px;
+    flex: 1;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.items div {
+    background-color: lightgreen;
+    padding: 20px;
+}
