@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    color: #222222;
+}
+
+header {
+    background-color: #2f5050;
+    color: white;
+    padding: 12px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f5fa;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: #12356b;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #dce5ee;
+}
+
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+
+aside {
+    font-size: 12px;
+}
+
+aside h2 {
+    font-size: 16px;
+}
+
+main {
+    min-width: 0;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    border: 1px solid #999999;
+    box-shadow: 2px 2px 3px #aaaaaa;
+    background-color: white;
+    padding: 0 0 10px 0;
+    min-width: 0;
+}
+
+
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.card h3 {
+    font-size: 13px;
+    margin: 10px 5px;
+}
+
+.card p {
+    font-size: 11px;
+    margin: 5px;
+    line-height: 1.4;
+}
+
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px 100px;
+}
+
+
+.copyright {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.footer-links a {
+    display: block;
+    color: #12356b;
+}
+
+
