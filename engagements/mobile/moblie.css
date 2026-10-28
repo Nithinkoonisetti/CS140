@@ -61,20 +61,14 @@ section {
     margin-top: 30px;
 }
 
-@media print {
-    nav,
-    aside {
-        display: none;
-    }
-
-    body {
-        margin: 0;
-        background: white;
-        color: black;
-    }
-
+@media (max-width: 600px) {
     .layout {
-        display: block;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        width: 100%;
+        flex: auto;
     }
 
     main {
@@ -85,7 +79,17 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .card {
-        break-inside: avoid;
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 12px 20px;
     }
 }
