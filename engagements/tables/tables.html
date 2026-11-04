@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Class Schedule</title>
+    <link rel="stylesheet" href="tables.css">
 </head>
 
 <body>
 
     <h1>Nithin's Class Schedule</h1>
 
-    <table border="1">
+    <table>
 
         <caption> Class Schedule </caption>
 
@@ -26,7 +27,6 @@
             </tr>
         </thead>
 
-        <!-- Winter 2027 -->
         <tbody>
             <tr>
                 <th colspan="6">Winter 2027</th>
@@ -138,37 +138,17 @@
     </table>
 
     <h2>Questions and Answers</h2>
+<p>1. Why don't we use the border attribute?</p>
+<p>We don't use the border attribute because CSS is better for styling. It keeps the design separate from the HTML.</p>
 
-    <h3>1. When do you use a table?</h3>
-    <p>
-        I use a table to organize information into rows and columns,
-        like my class schedule.
-    </p>
+<p>2. What is the easiest way to color every other row a different color?</p>
+<p>The easiest way is to use the :nth-child(even) selector in CSS. It colors every second row.</p>
 
-    <h3>2. When do you not use a table?</h3>
-    <p>
-        I will not use tables to design a website layout.
-        I will use CSS, Flexbox, or Grid instead.
-    </p>
-
-    <h3>3. When do you need to do extra work for table accessibility?</h3>
-    <p>
-        When a table has merged cells or many rows and columns and I learend how to use 
-        captions and proper headings to help screen readers.
-    </p>
-
-    <h3>4. Which question you asked AI today helped you learn the most, and why?</h3>
-    <p>
-        The colspan and rowspan question helped me most because
-        I learned how to combine cells across rows and columns.
-    </p>
-
-    <h3>5. Did AI ever try to give you more than you asked for,
-    like writing your code? What did you do?</h3>
-    <p>
-        Yes AI gives extra information. I asked it to
-        explain instead of writing my code so I could learn by myself.
-    </p>
+<p>3. What does the value in the parentheses of your structural pseudo-class mean? 
+    Give one other value you could use and which rows it would select.</p>
+<p>The value tells CSS which rows to select. For example, even selects the 2nd, 4th, and 6th rows. 
+    We can use odd to select the 1st, 3rd, and 5th rows.
+</p>
 
 </body>
 </html>
