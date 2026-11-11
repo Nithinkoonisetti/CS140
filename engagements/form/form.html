@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
 
     <header>
@@ -14,106 +16,101 @@
     </header>
 
     <main>
-        <form action="formprocessing" method="get">
 
-            <h2>Basic Information</h2>
+        <form action="#" method="get">
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name">
-            <br><br>
+            <fieldset>
+                <legend>Account</legend>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </fieldset>
 
-            <h2>More Information</h2>
+            <fieldset>
+                <legend>About You</legend>
 
-            <label for="course">Choose Your Course:</label>
-            <select id="course" name="course">
-                <option value="">Select a course</option>
-                <option value="it">Information Technology</option>
-                <option value="business">Business</option>
-                <option value="computer-science">Computer Science</option>
-                <option value="other">Other</option>
-            </select>
-            <br><br>
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
 
-            <p>Choose Your Study Level:</p>
+                <div>
+                    <label for="course">Choose Your Course:</label>
+                    <select id="course" name="course">
+                        <option value="it">Information Technology</option>
+                        <option value="business">Business</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-            <input type="radio" id="freshman" name="level" value="freshman">
-            <label for="freshman">Freshman</label>
+                <fieldset>
+                    <legend>Choose Your Study Level</legend>
 
-            <input type="radio" id="sophomore" name="level" value="sophomore">
-            <label for="sophomore">Sophomore</label>
+                    <div>
+                        <input type="radio" id="freshman" name="level" value="freshman">
+                        <label for="freshman">Freshman</label>
+                    </div>
 
-            <input type="radio" id="junior" name="level" value="junior">
-            <label for="junior">Junior</label>
+                    <div>
+                        <input type="radio" id="sophomore" name="level" value="sophomore">
+                        <label for="sophomore">Sophomore</label>
+                    </div>
 
-            <input type="radio" id="senior" name="level" value="senior">
-            <label for="senior">Senior</label>
+                    <div>
+                        <input type="radio" id="junior" name="level" value="junior">
+                        <label for="junior">Junior</label>
+                    </div>
+                </fieldset>
 
-            <br><br>
+                <div>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                </div>
 
-            <p>Choose Your Interests:</p>
+                <div>
+                    <input type="checkbox" id="technology" name="interests" value="technology">
+                    <label for="technology">Technology</label>
+                </div>
 
-            <input type="checkbox" id="sports" name="interests" value="sports">
-            <label for="sports">Sports</label>
+                <div>
+                    <label for="message">Why are you interested in this course?</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
 
-            <input type="checkbox" id="technology" name="interests" value="technology">
-            <label for="technology">Technology</label>
+                <div>
+                    <label for="birthday">Date of Birth:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
 
-            <input type="checkbox" id="music" name="interests" value="music">
-            <label for="music">Music</label>
-
-            <br><br>
-
-            <label for="message">Why are you interested in this course?</label>
-            <br>
-            <textarea id="message" name="message" rows="5" cols="35"></textarea>
-
-            <h2>HTML5 Controls</h2>
-
-            <label for="birthday">Date of Birth:</label>
-            <input type="date" id="birthday" name="birthday">
-            <br><br>
-
-            <label for="color">Choose Your Favorite Color:</label>
-            <input type="color" id="color" name="color">
-            <br><br>
+                <div>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+            </fieldset>
 
             <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
 
         </form>
 
-<section>
-    <h2>Questions and Answers</h2>
+        <section>
+            <h2>Questions and Answers</h2>
 
-    <h3>1. What does the action attribute do?</h3>
-    <p>It tells the browser where to send the form information.</p>
+            <h3>1. What are different ways to style your form?</h3>
+            <p>We can use colors, borders, spacing, padding, and CSS.</p>
 
-    <h3>2. What does the method attribute do?</h3>
-    <p>It tells the browser how to send the form information.</p>
+            <h3>2. Why does the professor like to use flex?</h3>
+            <p>Flex helps arrange labels and fields neatly in rows.</p>
 
-    <h3>3. What is the difference between POST and GET?</h3>
-    <p>GET shows information in the URL. POST sends information in the request body.</p>
-
-    <h3>4. How do you set a pre-set value, and how is it different from a placeholder?</h3>
-    <ul>
-        <li>Text box: Use value. Placeholder shows a hint.</li>
-        <li>Textarea: Put text between the tags. Placeholder shows a hint.</li>
-        <li>Select box: Use selected on an option.</li>
-        <li>Checkbox: Use checked.</li>
-        <li>Radio button: Use checked.</li>
-    </ul>
-
-    <h3>5. List the HTML5 form input types. Which ones did you use?</h3>
-    <p>They include email, date, color, number, range, search, tel, url, time, month, week, and datetime-local. I used email, date, and color.</p>
-</section>
+            <h3>3. What makes a good mobile form?</h3>
+            <p>A good mobile form is easy to read, tap, and fill out on a small screen.</p>
+        </section>
 
     </main>
 

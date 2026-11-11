@@ -1,0 +1,56 @@
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form div {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 120px;
+    margin-right: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid blue;
+    background-color: #f0f8ff;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+    form div {
+        flex-direction: column;
+    }
+
+    label {
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
