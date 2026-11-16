@@ -17,7 +17,7 @@
 
     <main>
 
-        <form action="#" method="get">
+        <form id="signup-form">
 
             <fieldset>
                 <legend>Account</legend>
@@ -102,14 +102,21 @@
         <section>
             <h2>Questions and Answers</h2>
 
-            <h3>1. What are different ways to style your form?</h3>
-            <p>We can use colors, borders, spacing, padding, and CSS.</p>
+            <h3>1. What is JavaScript? How did it get its name?</h3>
+            <p>JavaScript is a programming language used to make websites interactive. It was first called LiveScript and later renamed JavaScript.</p>
 
-            <h3>2. Why does the professor like to use flex?</h3>
-            <p>Flex helps arrange labels and fields neatly in rows.</p>
+            <h3>2. What are the two ways you can run JavaScript?</h3>
+            <p>We can run JavaScript inside an HTML file using a script tag or in a separate JavaScript file.</p>
 
-            <h3>3. What makes a good mobile form?</h3>
-            <p>A good mobile form is easy to read, tap, and fill out on a small screen.</p>
+            <h3>3. What is jQuery? Is it still popular today?</h3>
+            <p>jQuery is a JavaScript library that makes working with websites easier. It is still used, but it is less popular than before.</p>
+
+            <h3>4. What is the most popular front-end JS library today?</h3>
+            <p>React is one of the most popular front-end JavaScript libraries. It helps build interactive websites.</p>
+
+            <h3>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
+            <p>The code uses event.preventDefault() to stop the normal form submission. This allows JavaScript to check the information without reloading the page.</p>
+
         </section>
 
     </main>
@@ -117,6 +124,30 @@
     <footer>
         <p>&copy; 2026 Nithin Koonisetti</p>
     </footer>
+
+    <script>
+        const form = document.getElementById("signup-form");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const formData = {
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value
+            };
+
+            console.log(formData);
+
+            if (formData.email === "" || formData.password === "") {
+                alert("Please enter your email and password.");
+                return;
+            }
+
+            alert("Form submitted successfully!");
+
+        });
+    </script>
 
 </body>
 </html>
