@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="form.css">
+    <script src="submit.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <main>
 
         <form id="signup-form">
-
+         <div id="message"></div>
             <fieldset>
                 <legend>Account</legend>
 
@@ -100,54 +101,26 @@
         </form>
 
         <section>
-            <h2>Questions and Answers</h2>
+    <h2>Questions and Answers</h2>
 
-            <h3>1. What is JavaScript? How did it get its name?</h3>
-            <p>JavaScript is a programming language used to make websites interactive. It was first called LiveScript and later renamed JavaScript.</p>
+    <h3>1. What is AJAX?</h3>
+    <p>AJAX allows a webpage to send and receive data without reloading the page.</p>
 
-            <h3>2. What are the two ways you can run JavaScript?</h3>
-            <p>We can run JavaScript inside an HTML file using a script tag or in a separate JavaScript file.</p>
+    <h3>2. Why do you put your JS Code in a separate file?</h3>
+    <p>It keeps the HTML clean and makes the JavaScript easier to manage.</p>
 
-            <h3>3. What is jQuery? Is it still popular today?</h3>
-            <p>jQuery is a JavaScript library that makes working with websites easier. It is still used, but it is less popular than before.</p>
+    <h3>3. How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
+    <p>I use DevTools and check the Console for errors. I click the error to find the line number in my JavaScript code.</p>
 
-            <h3>4. What is the most popular front-end JS library today?</h3>
-            <p>React is one of the most popular front-end JavaScript libraries. It helps build interactive websites.</p>
-
-            <h3>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
-            <p>The code uses event.preventDefault() to stop the normal form submission. This allows JavaScript to check the information without reloading the page.</p>
-
-        </section>
-
+    <h3>4. Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</h3>
+    <p>My IDs are signup-form, email, and password. They match my JavaScript. I checked the Console and fixed any errors.</p>
+</section>
     </main>
 
     <footer>
         <p>&copy; 2026 Nithin Koonisetti</p>
     </footer>
 
-    <script>
-        const form = document.getElementById("signup-form");
-
-        form.addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            const formData = {
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value
-            };
-
-            console.log(formData);
-
-            if (formData.email === "" || formData.password === "") {
-                alert("Please enter your email and password.");
-                return;
-            }
-
-            alert("Form submitted successfully!");
-
-        });
-    </script>
 
 </body>
 </html>
