@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fill out a simple F1 fan survey.">
+<title>F1 Fan Form | My F1 Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>My F1 Website</h1><p>Learning about Formula 1 racing</p></header>
+<nav aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="teams.html">Teams</a>
+<a href="circuits.html">Circuits</a>
+<a href="technology.html">Technology</a>
+<a href="racing.html">Race Weekend</a>
+<a href="contact.html" class="active" aria-current="page">Fan Form</a></nav>
+<main><h2>F1 Fan Form</h2><p>This is a short form for Formula 1 fans. You can share your favorite team and tell me what you like about the sport. The form is just for this student project.</p>
+<img class="page-image" src="images/fan.svg" alt="Simple drawing of a race helmet and a checkered flag">
+<h3>Fill out the form</h3><form action="process.php" method="post">
+<label for="name">Your name:</label><input id="name" name="name" type="text" maxlength="80" required>
+<label for="email">Your email:</label><input id="email" name="email" type="email" maxlength="120" required>
+<label for="team">Favorite team:</label><select id="team" name="team" required><option value="">Choose a team</option><option>Ferrari</option><option>McLaren</option><option>Mercedes</option><option>Red Bull Racing</option><option>Other</option></select>
+<label for="experience">How long have you watched F1?</label><select id="experience" name="experience" required><option value="">Choose one</option><option>New fan</option><option>1-2 years</option><option>3 years or more</option></select>
+<label for="message">What do you like about F1?</label><textarea id="message" name="message" rows="5" maxlength="500" required></textarea>
+<button type="submit">Send Form</button></form>
+<p><small>This form shows a confirmation after validation. It does not save or email your answers.</small></p></main>
+<footer><p>&copy; 2026 My F1 Website | Student project, not affiliated with Formula 1.</p></footer>
+</body>
+</html>
