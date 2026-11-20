@@ -1,3 +1,162 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Submit a styled travel interest form with PHP processing."><meta name="author" content="Explore Hawaii Student Project"><title>Plan a Trip | Explore Hawaii</title><link rel="stylesheet" href="style.css"></head>
-<body><a class="skip" href="#main">Skip to content</a><header><div class="topbar"><a class="brand" href="index.html">Explore <span>Hawaii</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="islands.html">Islands</a><a href="beaches.html">Beaches</a><a href="culture.html">Culture</a><a href="adventures.html">Adventures</a><a href="contact.html" aria-current="page">Plan a Trip</a></nav></div></header><main id="main" class="container"><h1>Plan Your Hawaii Trip</h1><p class="lead">Tell us about a hypothetical trip using this student-project form. Submissions are saved on the hosting server only when PHP is supported. Please do not enter sensitive personal information.</p><div class="form-panel"><h2>Travel Interest Form</h2><form action="process.php" method="post"><div class="form-grid"><div class="field"><label for="name">Your name *</label><input id="name" name="name" type="text" maxlength="100" autocomplete="name" required></div><div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" maxlength="200" autocomplete="email" required></div><div class="field"><label for="island">Preferred island *</label><select id="island" name="island" required><option value="">Select an island</option><option>Oahu</option><option>Maui</option><option>Hawaii Island</option><option>Kauai</option><option>Molokai</option><option>Lanai</option></select></div><div class="field"><label for="month">Travel month *</label><select id="month" name="month" required><option value="">Select a month</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select></div><div class="field full"><label for="activity">Favorite activity *</label><select id="activity" name="activity" required><option value="">Select an activity</option><option>Hiking</option><option>Beach relaxation</option><option>Cultural learning</option><option>Wildlife viewing</option></select></div><div class="field full"><label for="message">Tell us about your interests</label><textarea id="message" name="message" maxlength="1000" placeholder="What would you like to experience?"></textarea></div></div><button class="btn" type="submit">Submit My Plan</button><p class="help">* Required. This form does not book travel or send an email.</p></form></div><h2>Helpful Planning Resources</h2><p>Explore official <a href="https://www.gohawaii.com/trip-planning">trip planning information</a> and check <a href="https://www.weather.gov/hfo/">weather forecasts</a> before departure.</p></main><footer class="footer"><div class="footer-inner"><p><strong>Explore Hawaii</strong> — An educational travel guide.</p><p>Respect local communities, follow posted safety rules, and care for the islands. <a href="https://www.gohawaii.com/">Hawai‘i tourism information</a>.</p><p>&copy; 2026 Explore Hawaii. Student website project.</p></div></footer></body></html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Fill out a simple F1 fan survey." name="description"/>
+  <title>
+   F1 Fan Form | My F1 Website
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1>
+    My F1 Website
+   </h1>
+   <p>
+    Learning about Formula 1 racing
+   </p>
+  </header>
+  <nav aria-label="Main navigation">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="teams.html">
+    Teams
+   </a>
+   <a href="circuits.html">
+    Circuits
+   </a>
+   <a href="technology.html">
+    Technology
+   </a>
+   <a href="racing.html">
+    Race Weekend
+   </a>
+   <a aria-current="page" class="active" href="contact.html">
+    Fan Form
+   </a>
+  </nav>
+  <main>
+   <h2>
+    F1 Fan Registration Form
+   </h2>
+   <p>
+    I made this form for Formula 1 fans. You can share your favorite team and what you enjoy about racing.
+   </p>
+   <img alt="Simple drawing of a race helmet and checkered flag" class="page-image" src="images/fan.svg"/>
+   <form action="https://formspree.io/f/YOUR_FORM_ID" id="fan-form" method="POST">
+    <fieldset>
+     <legend>
+      Personal Information
+     </legend>
+     <div class="form-row">
+      <label for="name">
+       Full Name:
+      </label>
+      <input id="name" maxlength="80" name="name" required="" type="text"/>
+     </div>
+     <div class="form-row">
+      <label for="email">
+       Email:
+      </label>
+      <input id="email" maxlength="120" name="email" required="" type="email"/>
+     </div>
+     <div class="form-row">
+      <label for="team">
+       Favorite F1 Team:
+      </label>
+      <select id="team" name="team" required="">
+       <option value="">
+        Choose a team
+       </option>
+       <option value="Ferrari">
+        Ferrari
+       </option>
+       <option value="Mercedes">
+        Mercedes
+       </option>
+       <option value="McLaren">
+        McLaren
+       </option>
+       <option value="Red Bull Racing">
+        Red Bull Racing
+       </option>
+       <option value="Other">
+        Other
+       </option>
+      </select>
+     </div>
+    </fieldset>
+    <fieldset>
+     <legend>
+      About Your F1 Interest
+     </legend>
+     <p>
+      How long have you watched Formula 1?
+     </p>
+     <div class="choice">
+      <input id="new" name="experience" required="" type="radio" value="New fan"/>
+      <label for="new">
+       New fan
+      </label>
+     </div>
+     <div class="choice">
+      <input id="one" name="experience" type="radio" value="1-2 years"/>
+      <label for="one">
+       1-2 years
+      </label>
+     </div>
+     <div class="choice">
+      <input id="three" name="experience" type="radio" value="3 or more years"/>
+      <label for="three">
+       3 or more years
+      </label>
+     </div>
+     <p>
+      What do you enjoy about F1?
+     </p>
+     <div class="choice">
+      <input id="races" name="interests" type="checkbox" value="Watching races"/>
+      <label for="races">
+       Watching races
+      </label>
+     </div>
+     <div class="choice">
+      <input id="cars" name="interests" type="checkbox" value="Learning about cars"/>
+      <label for="cars">
+       Learning about cars
+      </label>
+     </div>
+     <div class="choice">
+      <input id="drivers" name="interests" type="checkbox" value="Following drivers"/>
+      <label for="drivers">
+       Following drivers
+      </label>
+     </div>
+     <div class="form-row">
+      <label for="message">
+       Why do you like F1?
+      </label>
+      <textarea id="message" maxlength="500" name="message" rows="5"></textarea>
+     </div>
+    </fieldset>
+    <button type="submit">
+     Submit
+    </button>
+   </form>
+   <p>
+    <small>
+     Form submissions are handled by Formspree. Do not enter private information. Replace YOUR_FORM_ID before using this form.
+    </small>
+   </p>
+  </main>
+  <footer>
+   <p>
+    &copy; 2026 My F1 Website | Student project, not affiliated with Formula 1.
+   </p>
+  </footer>
+ </body>
+</html>
+
